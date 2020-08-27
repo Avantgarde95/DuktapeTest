@@ -35,7 +35,9 @@ static std::string runCode(duk_context *jsContext, const std::string &code) {
         );
     }
 
-    return duk_safe_to_string(jsContext, -1);
+    std::string result = duk_safe_to_string(jsContext, -1);
+    duk_pop(jsContext);
+    return result;
 }
 
 int main() {
@@ -50,7 +52,6 @@ int main() {
         std::cout << "[Error] " << error.what() << "\n";
     }
 
-    duk_pop(jsContext);
     duk_destroy_heap(jsContext);
 
     return 0;
