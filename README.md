@@ -11,5 +11,5 @@ Example of running [Typescript](https://www.typescriptlang.org/) code natively b
 ### How to run
 
 After building,
-make sure that the working directory is the same as the directory of the executable (`DuktapeTest(.exe.)`)
+make sure that the working directory is the same as the directory of the executable (`DuktapeTest(.exe)`)
 and `dist` directory exists on that directory. Just run the executable.
