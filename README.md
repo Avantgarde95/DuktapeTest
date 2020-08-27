@@ -12,4 +12,16 @@ Example of running [Typescript](https://www.typescriptlang.org/) code natively b
 
 After building,
 make sure that the working directory is the same as the directory of the executable (`DuktapeTest(.exe)`)
-and `dist` directory exists on that directory. Just run the executable.
+and `dist` directory exists in the directory of the executable. Just run the executable.
+
+### Requirements
+
+- [CMake](https://cmake.org/)
+- [Node.js](https://nodejs.org/)
+
+### To do
+
+- Multiple Typescript files
+- Console input (`input()` function)
+- Combine other C/C++ libraries (ex. [PDCurses](https://github.com/wmcbrine/PDCurses))
+- Multiplatform (Web and native)
